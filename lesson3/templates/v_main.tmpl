@@ -1,0 +1,9 @@
+
+    <div class="main">
+        <ul class='preview'>
+            {%for image in images%}
+                <li><a class="font_norm link" href={{pathImg}}{{image}}  target='_blank'><img class='imagePreview' src={{pathPreview}}{{image}} width='200' height='200' alt="{{image}}"></a></li>
+            {%endfor%}   
+        </ul>  
+    </div>
+   
