@@ -1,0 +1,39 @@
+.items {
+    margin-top: 2rem;
+    
+    .item {
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 90%;
+        border: 1px solid #E8E2E1;
+        border-radius: 5px;
+        background: #FFFEFB;
+        background: -webkit-radial-gradient(center, #FFFEFB, #CCC8C8);
+        background: -moz-radial-gradient(center, #FFFEFB, #CCC8C8);
+        background: radial-gradient(ellipse center, #FFFEFB, #CCC8C8);
+        .item-name {
+            width: 100%;
+            a{
+                text-decoration: none;
+                font-family: 'Roboto','Helvetica', sans-serif;
+                font-weight: 700;
+                color: $fontColor;
+            }
+        }
+        .add-to-basket{
+             .price{
+                color:brown;
+                 font-size: 1.5rem;
+            }
+            button {
+            
+                width: 250px;
+                color:#fff;
+            }
+            p:nth-child(2){
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+        }
+    }
+}
