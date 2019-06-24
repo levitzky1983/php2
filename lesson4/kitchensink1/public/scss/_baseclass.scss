@@ -1,0 +1,68 @@
+.font_norm {
+    font-family: $fontFamily;
+    font-size: 1.8*$fontSize;
+    font-weight: 400;
+    color:$fontColor;
+}
+h2.font_norm {
+    font-family: $fontFamily;
+    font-size: 3.6*$fontSize;
+    font-weight: 400;
+    color:$fontColor;
+}
+.font_comment {
+    font-family: $fontFamily;
+    font-size: 1.8*$fontSize;
+    font-weight: 300;
+    color:#c6c6c6;
+}
+.flex_row {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex_col {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: $fontColor;
+    &:hover {
+        text-decoration: none;
+        color: darken($fontColor ,20%); 
+        font-weight: 500;
+    }
+}
+
+.button{
+    background-color: $fontColor;
+    color:azure;
+    font-family:'Roboto','Helvetica', sans-serif;
+    font-size: 1.5rem;
+    min-height: 50px;
+    border-radius: 10px;
+    outline: none;
+    &:hover{
+        outline: none;
+        background-color: darken($fontColor,20%);
+    }
+    &:active{
+        outline: none;
+        background-color: darken($fontColor,10%);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+p {
+    margin: 0;
+}
