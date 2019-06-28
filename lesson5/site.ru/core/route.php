@@ -1,6 +1,7 @@
 <?php
 class Route {
     static function start() {
+        $pages=Session::lastPages();
         if(isset($_GET['action'])) {
             $c_name = trim(strip_tags($_GET['c']));
             $act_name = trim(strip_tags($_GET['action']));
@@ -31,5 +32,6 @@ class Route {
         $controller = new $c_name;
         $action = $act_name;
         $controller->$action();
+        
     }
 }

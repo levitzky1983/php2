@@ -3,6 +3,6 @@
 <p>Имя : <?=$name?></p>
 <p>Логин : <?=$login?></p>
 <p>Посещенные страницы : </p>
-<?foreach(Session::lastPages() as $page):?>
+<?foreach($pages as $page):?>
 <p><?echo $page?></p>
 <?endforeach?>

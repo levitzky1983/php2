@@ -8,5 +8,6 @@ class C_PersonalAccount extends Controllers {
         $data = $this->model->getData();
         $data['title'] ='Кабинет'; 
         $this->view->Template('v_personalAccount.php','v_template.php',$data);
+        
     }
 }
