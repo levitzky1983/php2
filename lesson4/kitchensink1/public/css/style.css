@@ -1,0 +1,393 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: bold; }
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+  font-weight: 300; }
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-ExtraLight.ttf);
+  font-weight: 200; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf);
+  font-weight: 500; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+  font-weight: 600; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf);
+  font-weight: 700; }
+@font-face {
+  font-family: ExtraRaleway;
+  src: url(../fonts/Raleway/Raleway-ExtraBold.ttf);
+  font-weight: 700; }
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\000031}}
+.font_norm {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #c7b299; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\000037}}
+h2.font_norm {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #c7b299; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000313}}
+.font_comment {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #c6c6c6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000319}}
+.flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000327}}
+.flex_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000335}}
+.link {
+  text-decoration: none;
+  color: #c7b299; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000338}}
+  .link:hover {
+    text-decoration: none;
+    color: #a18059;
+    font-weight: 500; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000345}}
+.button {
+  background-color: #c7b299;
+  color: azure;
+  font-family: 'Roboto','Helvetica', sans-serif;
+  font-size: 1.5rem;
+  min-height: 50px;
+  border-radius: 10px;
+  outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000353}}
+  .button:hover {
+    outline: none;
+    background-color: #a18059; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000357}}
+  .button:active {
+    outline: none;
+    background-color: #b59978; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000361}}
+  .button:focus {
+    outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_baseclass\.scss}line{font-family:\0000366}}
+p {
+  margin: 0; }
+
+/*html,body{
+    width: $widthAll;
+    margin: 0 auto;
+}*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\000035}}
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background-color: azure; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000310}}
+  header .up_header {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000313}}
+  header .down_header {
+    width: 100%;
+    min-height: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000316}}
+    header .down_header .logo {
+      width: 30%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000319}}
+    header .down_header .diller {
+      width: 40%;
+      min-height: 150px;
+      border-left: 2px solid #c7b299;
+      border-right: 2px solid #c7b299;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000326}}
+      header .down_header .diller .contact_phone {
+        font-size: 3rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000330}}
+    header .down_header .cart {
+      width: 30%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000332}}
+      header .down_header .cart .cart_inner {
+        width: 50px;
+        height: 50px;
+        background: url(../img/icons/cart.png) no-repeat;
+        background-size: 100%;
+        background-position: center;
+        -webkit-transition: all 1s;
+        transition: all 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_header\.scss}line{font-family:\0000340}}
+        header .down_header .cart .cart_inner:hover {
+          width: 70px;
+          height: 70px;
+          cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\000031}}
+.menu {
+  margin-top: 1rem;
+  list-style-type: none;
+  background-color: azure;
+  outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\000036}}
+  .menu .btn {
+    outline: none;
+    border-radius: 50px;
+    border-color: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000311}}
+  .menu .btn-secondary {
+    background-color: transparent;
+    border: none;
+    color: #c7b299;
+    outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000316}}
+    .menu .btn-secondary:hover {
+      outline: none;
+      color: #a18059;
+      border: none;
+      outline-color: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000322}}
+    .menu .btn-secondary:active {
+      outline: none;
+      color: #a18059;
+      border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000327}}
+    .menu .btn-secondary:focus {
+      outline: none;
+      color: #a18059;
+      border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000333}}
+  .menu .show > .btn-secondary.dropdown-toggle {
+    color: #a18059;
+    background-color: transparent;
+    border: none;
+    outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000338}}
+    .menu .show > .btn-secondary.dropdown-toggle:active {
+      outline: none;
+      color: #a18059;
+      background-color: transparent;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000345}}
+    .menu .show > .btn-secondary.dropdown-toggle:focus {
+      outline: none;
+      color: #a18059;
+      background-color: transparent;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_menu\.scss}line{font-family:\0000353}}
+  .menu .btn-secondary:not(:disabled):not(.disabled).active, .menu .btn-secondary:not(:disabled):not(.disabled):active, .menu .show > .btn-secondary.dropdown-toggle {
+    color: #a18059;
+    background-color: transparent;
+    border-color: none;
+    outline-color: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_slider\.scss}line{font-family:\000031}}
+.slider {
+  width: 100%;
+  background-color: azure; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_slider\.scss}line{font-family:\000034}}
+  .slider .slide {
+    width: 800px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\000031}}
+.items {
+  margin-top: 2rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\000034}}
+  .items .item {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 90%;
+    border: 1px solid #E8E2E1;
+    border-radius: 5px;
+    background: #FFFEFB;
+    background: radial-gradient(ellipse center, #FFFEFB, #CCC8C8); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\0000314}}
+    .items .item .item-name {
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\0000316}}
+      .items .item .item-name a {
+        text-decoration: none;
+        font-family: 'Roboto','Helvetica', sans-serif;
+        font-weight: 700;
+        color: #c7b299; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\0000324}}
+    .items .item .add-to-basket .price {
+      color: brown;
+      font-size: 1.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\0000328}}
+    .items .item .add-to-basket button {
+      width: 250px;
+      color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_main\.scss}line{font-family:\0000333}}
+    .items .item .add-to-basket p:nth-child(2) {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\000031}}
+.cart {
+  margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\000034}}
+  .cart h2 {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\000038}}
+  .cart .item-cart {
+    width: 80%;
+    border: 1px solid #C6C6C6;
+    min-height: 150px;
+    margin-top: 10px;
+    padding: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000315}}
+    .cart .item-cart .item-cart-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 200px;
+      min-height: 150px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000324}}
+    .cart .item-cart .count-display {
+      width: 60px;
+      height: 30px;
+      border: 2px solid #c6c6c6;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-weight: 600;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000334}}
+    .cart .item-cart .btn-count {
+      text-align: center;
+      line-height: 2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: azure;
+      outline: none;
+      border: 2px solid #c6c6c6;
+      color: #c7b299;
+      font-size: 2rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000346}}
+      .cart .item-cart .btn-count:hover {
+        background-color: #8affff;
+        color: #a18059;
+        text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000352}}
+      .cart .item-cart .btn-count:active {
+        background-color: #00bdbd;
+        color: #1e1810; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000358}}
+    .cart .item-cart .item-cart-delete a {
+      color: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000361}}
+      .cart .item-cart .item-cart-delete a:hover {
+        color: #990000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000365}}
+      .cart .item-cart .item-cart-delete a:active {
+        color: #330000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000371}}
+  .cart .user-cart-price {
+    width: 80%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 20px;
+    font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000378}}
+  .cart .continue_buy {
+    width: 80%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 20px;
+    font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000385}}
+  .cart .cart_form {
+    width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000388}}
+    .cart .cart_form input[type='text'],
+    .cart .cart_form input[type='email'],
+    .cart .cart_form input[type='tel'] {
+      width: 500px;
+      border-radius: 5px;
+      padding-left: 10px;
+      outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\0000396}}
+      .cart .cart_form input[type='text']:hover,
+      .cart .cart_form input[type='email']:hover,
+      .cart .cart_form input[type='tel']:hover {
+        border-color: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Open-server3\.5\.0\/OSPanel\/domains\/kitchensink\/public\/scss\/_cart\.scss}line{font-family:\00003101}}
+      .cart .cart_form input[type='text']:focus,
+      .cart .cart_form input[type='email']:focus,
+      .cart .cart_form input[type='tel']:focus {
+        background-color: azure; }
+
+/*# sourceMappingURL=style.css.map */
