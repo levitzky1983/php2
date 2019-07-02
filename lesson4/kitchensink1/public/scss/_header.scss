@@ -1,0 +1,48 @@
+/*html,body{
+    width: $widthAll;
+    margin: 0 auto;
+}*/
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    background-color: azure;
+    .up_header{
+        width: 100%;
+    }
+    .down_header{
+        width: 100%;
+        min-height: 200px;
+        .logo {
+            width: 30%;
+        }
+        .diller {
+            width: 40%;
+            min-height: 150px;
+            border-left: 2px solid $fontColor;
+            border-right: 2px solid $fontColor;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            .contact_phone {
+                font-size: 3rem;
+            }
+        }
+        .cart {
+            width: 30%;
+            .cart_inner {
+                width: 50px;
+                height: 50px;
+                background: url(../img/icons/cart.png) no-repeat;
+                background-size: 100%;
+                background-position: center;
+                transition: all 1s;
+
+                &:hover {
+                    width: 70px;
+                    height: 70px;
+                    cursor: pointer;
+                }
+            }
+        }    
+    } 
+}
