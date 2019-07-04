@@ -38,7 +38,7 @@ class Route {
         $c_name = 'c_'.$c_name;
         $controller = new $c_name;
         $action = $act_name;
-        $controller->$action();
+        $controller->$action($id);
         
     }
 }

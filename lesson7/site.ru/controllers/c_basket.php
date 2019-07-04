@@ -4,22 +4,22 @@ class C_Basket extends Controllers {
         parent::__construct();
         $this->model = new M_Basket;
     }
-    public function action_index() {
-        $data = $this->model->getData();
+    public function action_index($id) {
+        $data = $this->model->getData($id);
         $this->view->Template('v_basket.php','v_template.php',array('title'=>'Корзина','goods'=>$data));
     }
-    public function action_addToBasket() {
-        $data = $this->model->addToBasket();
+    public function action_addToBasket($id) {
+        $data = $this->model->addToBasket($id);
         $this->view->Template('v_basket.php','v_template.php',array('title'=>'Корзина','goods'=>$data));
     }
 
-    public function action_deleteAllBasket() {
+    public function action_deleteAllBasket($id) {
         $this->model->deleteAllBasket();
         $this->view->Template('v_basket.php','v_template.php',array('title'=>'Корзина'));
     }
 
-    public function action_deleteGoodFromBasket() {
-        $data = $this->model->deleteGoodFromBasket();
+    public function action_deleteGoodFromBasket($id) {
+        $data = $this->model->deleteGoodFromBasket($id);
         $this->view->Template('v_basket.php','v_template.php',array('title'=>'Корзина','goods'=>$data));
     }
 }

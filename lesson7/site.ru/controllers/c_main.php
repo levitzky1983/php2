@@ -4,13 +4,13 @@ class C_Main extends Controllers {
         parent::__construct();
         $this->model = new M_Main;
     }
-    function action_index() {
+    function action_index($id) {
         $new_user = new C_User;
         if($this->isPOST()) {
             if(isset($_POST['auth'])) {
-                $new_user->action_auth();
+                $new_user->action_auth($id);
             } elseif(isset($_POST['registration'])) {
-                $new_user->action_registration();
+                $new_user->action_registration($id);
             }
            
         } else {

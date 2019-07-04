@@ -20,7 +20,7 @@
 
                 <?php if(Session::get('user_id')):?>
                    
-                    <li class="menu_li"><a href="index.php?path=user/account" class="link">Личный кабинет</a></li>
+                    <li class="menu_li"><a href="index.php?path=user/account/<?=Session::get('user_id')?>" class="link">Личный кабинет</a></li>
                     <li class="menu_li"><a href="index.php?path=user/logOut" class="link">Выйти</a></li> 
                 <?php else:?>
                

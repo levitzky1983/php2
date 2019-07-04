@@ -1,8 +1,8 @@
 <?php
 class M_User extends Model {
-    public function getData(){
+    public function getData($id){
     }
-    public function authUser() {
+    public function authUser($id) {
         if(!isset($_SESSION)){
             Session::init();
         }
@@ -22,14 +22,14 @@ class M_User extends Model {
         return $str;
     }
 
-    public function logOut() {
+    public function logOut($id) {
         if(isset($_SESSION)){
             Session::unset('user_id');
             Session::destroy();
         }
     }
 
-    public function registration() {
+    public function registration($id) {
         $name = $_POST['name'];
         $login  = $_POST['login'];
         $pass = $_POST['pass'];
@@ -40,7 +40,7 @@ class M_User extends Model {
             $result = DB::insert($sql,[':name'=>$name,':login'=>$login,':pass'=>$pass]);
             if($result) {
                 $str = 'Вы успешно зарегистрированы.';
-                header('Location:index.php');
+                //header('Location:index.php');
             } else {
                 $str = 'Ошибка регистрации';
             }
@@ -51,9 +51,9 @@ class M_User extends Model {
         return $str;
     }
 
-    public function account() {
+    public function account($id) {
         $sql = "SELECT * FROM users WHERE id = :id";
-        $result = DB::getrow($sql,[':id'=>session::get('user_id')]);
+        $result = DB::getrow($sql,[':id'=>$id]);
         return $result;
     }
 }

@@ -1,12 +1,12 @@
 <?
 class M_Basket extends Model {
-    public function getData() {
+    public function getData($id) {
         $goods = json_decode($_COOKIE['goods'],true);
         return $goods;
     }
 
-    public function addToBasket() {
-        $id_good = $_GET['id'];
+    public function addToBasket($id) {
+        $id_good = $id;
         $sql = "SELECT good.id as id, good.title as title, good.price as price, good.article as article, good.img as img, color.title as color FROM goods as good ";
         $sql .= "LEFT JOIN colors as color on good.id_color=color.id WHERE good.id = :id"; 
         $good = DB::getRow($sql,[':id'=>$id_good]);
@@ -35,15 +35,16 @@ class M_Basket extends Model {
         return $goods;
     }
 
-    public function deleteAllBasket() {
+    public function deleteAllBasket($id) {
         $goods = json_decode($_COOKIE['goods'],true);
         unset ($goods);
         $goodsJson=json_encode($goods);
         setcookie('goods',$goodsJson,time() + 60 * 60 * 24 * 365,"/",'php2');
+        return $goods;
     }
 
-    public function deleteGoodFromBasket() {
-        $id_good = (int)($_GET['id']);
+    public function deleteGoodFromBasket($id) {
+        $id_good = $id;
         $goods = json_decode($_COOKIE['goods'],true); 
            
         for($i=0; $i<count($goods);$i++){

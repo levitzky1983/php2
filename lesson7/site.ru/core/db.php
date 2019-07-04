@@ -58,7 +58,7 @@ class DB {
      * @return array
      */
     public static function getRow($sql, $args = []) {
-        return self::sql($sql, $args)->fetch();
+        return self::sql($sql, $args)->fetch(PDO::FETCH_ASSOC);
     }
 
     /**

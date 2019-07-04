@@ -5,7 +5,7 @@ abstract class Controllers {
     function __construct() {
         $this->view = new View;
     }
-    function action_index(){}
+    function action_index($id){}
 
     protected function IsGet() {
 		return $_SERVER['REQUEST_METHOD'] == 'GET';

@@ -4,19 +4,19 @@ class C_User extends Controllers {
         parent::__construct();
         $this->model = new M_User;
     }
-    function action_index() {
+    function action_index($id) {
         $this->view->Template('v_main.php','v_template.php',array('title'=>'Главная'));
     }
-    function action_auth() {
-        $data = $this->model->authUser();
+    function action_auth($id) {
+        $data = $this->model->authUser($id);
         $this->view->Template('v_main.php','v_template.php',array('title'=>'Главная','data'=>$data));
     }
-    function action_logOut() {
-        $this->model->logOut();
+    function action_logOut($id) {
+        $this->model->logOut($id);
         $this->view->Template('v_main.php','v_template.php',array('title'=>'Главная'));
     }
-    function action_registration(){
-        if($this->isPost()){
+    function action_registration($id){
+        if($this->isPost($id)){
             $data = $this->model->registration();
         }
         //print_r($_POST);
@@ -26,9 +26,8 @@ class C_User extends Controllers {
         $this->view->Template('v_registration.php','v_template.php',array('title'=>'Регистрация','str'=>$data));
     }
 
-    function action_account() {
-        $data = $this->model->account();
-        $data['title'] = '';
+    function action_account($id) {
+        $data = $this->model->account($id);
         $this->view->Template('v_personalAccount.php','v_template.php',array('title'=>'Личный кабинет','data'=>$data));
     }
     
